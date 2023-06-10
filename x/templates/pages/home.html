@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 text-center py-5">
+      <h1>مرحباً بك في موقعنا</h1>
+      <p class="lead">نحن هنا لنقدم لك أفضل تجربة ممكنة.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="تصميم تجريبي">
+            <div class="card-body">
+              <h5 class="card-title">عنوان الميزة 1</h5>
+              <p class="card-text">وصف موجز للميزة 1 وكيف يمكن أن تكون مفيدة للمستخدمين.</p>
+              <a href="#" class="btn btn-primary">اكتشف المزيد</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="تصميم تجريبي">
+            <div class="card-body">
+              <h5 class="card-title">عنوان الميزة 2</h5>
+              <p class="card-text">وصف موجز للميزة 2 وكيف يمكن أن تكون مفيدة للمستخدمين.</p>
+              <a href="#" class="btn btn-primary">اكتشف المزيد</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="تصميم تجريبي">
+            <div class="card-body">
+              <h5 class="card-title">عنوان الميزة 3</h5>
+              <p class="card-text">وصف موجز للميزة 3 وكيف يمكن أن تكون مفيدة للمستخدمين.</p>
+              <a href="#" class="btn btn-primary">اكتشف المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock content %}

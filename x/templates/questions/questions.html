@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% include 'navbar.html' %}
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center my-4">أسئلة القدرات العامة</h1>
+    {% for q in ques %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <form action="{% url 'check_answer' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="question_id" value="{{q.id}}">
+                <h5 class="card-title">{{q.question}}</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answer" id="option1" value="{{q.option_1}}">
+                    <label class="form-check-label" for="option1">{{q.option_1}}</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answer" id="option2" value="{{q.option_2}}">
+                    <label class="form-check-label" for="option2">{{q.option_2}}</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answer" id="option3" value="{{q.option_3}}">
+                    <label class="form-check-label" for="option3">{{q.option_3}}</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answer" id="option4" value="{{q.option_4}}">
+                    <label class="form-check-label" for="option4">{{q.option_4}}</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">إرسال إجابة</button>
+            </form>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+
+
+{% endblock content %}
+{% include 'footer.html' %}

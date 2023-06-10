@@ -1,0 +1,37 @@
+/* style.css */
+body {
+    font-family: "Tajawal", sans-serif;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #007BFF;
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+    color: #28A745;
+  }
+  
+  .card {
+    margin-bottom: 2rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #007BFF;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  .btn-primary {
+    background-color: #28A745;
+    border-color: #28A745;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }

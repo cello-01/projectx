@@ -1,0 +1,26 @@
+/* navbar.css */
+body {
+    font-family: "Tajawal", sans-serif;
+  }
+  
+  .navbar {
+    background-color: #007BFF; /* اللون الأزرق */
+  }
+  
+  .nav-link {
+    margin-right: 1rem;
+    color: #28A745; /* اللون الأخضر */
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-brand {
+    color: #FFC107; /* اللون الأصفر */
+  }
+  
+  .navbar-brand:hover {
+    color: #DC3545; /* اللون الأحمر */
+  }
